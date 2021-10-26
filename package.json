@@ -8,7 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test --watch=false",
     "commit": "commit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier:run": "prettier --write \"**/*.{html,ts,tsx,js,jsx,cjs,mjs,vue,css,scss,less,json,md,mdx,yaml}\"",
+    "prettier:check": "prettier --check \"**/*.{html,ts,tsx,js,jsx,cjs,mjs,vue,css,scss,less,json,md,mdx,yaml}\"",
+    "pretty-quick:staged": "pretty-quick --staged"
   },
   "private": true,
   "dependencies": {
@@ -40,6 +43,8 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
     "typescript": "~4.3.5"
   }
 }
