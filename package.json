@@ -1,6 +1,6 @@
 {
   "name": "ng-demo",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +12,9 @@
     "prettier:run": "prettier --write \"**/*.{html,ts,tsx,js,jsx,cjs,mjs,vue,css,scss,less,json,md,mdx,yaml}\"",
     "prettier:check": "prettier --check \"**/*.{html,ts,tsx,js,jsx,cjs,mjs,vue,css,scss,less,json,md,mdx,yaml}\"",
     "pretty-quick:staged": "pretty-quick --staged",
-    "eslint:check": "eslint ."
+    "eslint:check": "eslint .",
+    "release": "semantic-release",
+    "build:gh-pages": "ng build --baseHref=\"/ng-demo/\""
   },
   "private": true,
   "dependencies": {
